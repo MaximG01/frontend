@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+InfoWarzone
+Project Summary
+A website that has two sections. In the first section the user can click on different weapons to get information about them ranging from description to fun facts. In the second section, the user enters their name and  can create a loadout of weapons by choosing one primary, one secondary and one melee weapon. The user can then delete their loadout or modify it.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Project Summary	1
+User Stories	1
+ER Diagram	1
+User Endpoints	2
 
-In the project directory, you can run:
 
-### `npm start`
+Project Description
+The project was made with spring-boot for the backend as well as React.js for the frontend. I also used the libraries react router as well as Awesome tables which are like a slide presentation. https://github.com/rcaferati/react-awesome-slider. 
+User Stories
+As a user, I want to click on different buttons in order to have access to information about them.
+As a user, I want to click on the arrows situated on the sides of the page to be able to navigate through the slider so that I can read different information about weather weapons such as the description, year made, bullet type, rate of fire, country of origin, creator, class and three different facts.
+As a user I want to click on “Loadout” so that I can be brought to a new page.
+As a user I want to fill out a form and so that I can see my full name be displayed on the screen.
+As a user I want to select a weapon so that I can build Loadout.
+As a user I want to click on the “Edit Loadout” button so that I can edit my loadout(s).
+As a user I want to click on the “Delete Loadout” button so that I can delete my loadout(s).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ER Diagram
 
-### `npm test`
+User Endpoints
+@GetMapping("/descriptions/{Id}")
+@GetMapping("/User")
+@PostMapping("/User")
+@GetMapping("/Loadout")
+@PostMapping("/Loadout")
+@PutMapping("/Loadout/{loadoutId}")
+@DeleteMapping("/Loadout/{id}")
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Challenges
+I have not been able to figure out the Put request. It has been a challenge and I intend to fix it in the future, I also plan on adding more guns, and other features such as drag and drop.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
